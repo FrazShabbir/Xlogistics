@@ -95,7 +95,7 @@
   padding-left:0;
   margin-bottom:0;
   list-style:none;
-  float: right;
+  float: left;
 }
 .social-icons li
 {
@@ -177,6 +177,7 @@
     padding-left:10%;
      padding-right:10%;
      width: 80%;
+     margin: 0 10% 0 10%;
 }
 .cte ul li a{
     padding-left:10%;
@@ -188,5 +189,27 @@
 }
 .abc{
     vertical-align: middle;
-    padding: 20px;
+}
+
+.terms a{
+    
+    color:#818a91;
+    font-size:16px;
+    display:inline-block;
+    line-height:44px;
+   
+}
+.terms a:hover{
+    color: rgb(104, 104, 240);
+}
+.terms{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.icon-align{
+    text-align: center!important;
 }
