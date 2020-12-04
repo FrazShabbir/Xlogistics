@@ -94,7 +94,8 @@
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  float: right;
 }
 .social-icons li
 {
@@ -181,4 +182,11 @@
     padding-left:10%;
      padding-right:10%;
      width: 80%;
+}
+.privacy{
+    vertical-align: middle;
+}
+.abc{
+    vertical-align: middle;
+    padding: 20px;
 }
