@@ -88,6 +88,9 @@ a:hover {
 img {
   max-width: 100%;
 }
+.set-width{
+  width:75%;
+}
 
 .d-table {
   width: 100%;
