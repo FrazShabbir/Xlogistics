@@ -162,7 +162,17 @@
     font-weight:600
   }
 }
+.image-set{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
+
+}
+.mr-30{
+  margin-bottom: 30px!important;
+}
 .footer-pd{
     padding: 20px;
 }
