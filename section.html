@@ -31,7 +31,7 @@
     <title>One by one section</title>
     <link rel="icon" type="image/png" href="favicons/img-favicon.png">
 
-    <style>
+ <style>
 
 
 
@@ -216,7 +216,260 @@ svg {
     vertical-align: middle;
 }
 
-    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.heading__pre-title {
+    display: inline-block;
+    color: #a9aeb3;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    z-index: 1;
+    position: relative
+}
+
+
+
+
+
+.pricing-plan__bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 50px);
+    height: auto
+}
+
+.pricing-plan__price {
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -.050em;
+    margin: 41px 0 21px 0
+}
+
+@media only screen and (min-width:992px) {
+    .pricing-plan__price {
+        margin: 51px 0 31px 0
+    }
+}
+
+.pricing-plan__price span {
+    display: inline-block
+}
+
+.pricing-plan__price span:first-of-type {
+    font-size: 80px;
+    margin-right: 10px
+}
+
+@media only screen and (min-width:992px) {
+    .pricing-plan__price span:first-of-type {
+        font-size: 100px
+    }
+}
+
+.pricing-plan__price span:last-of-type {
+    font-size: 30px;
+    text-transform: uppercase
+}
+
+.pricing-plan .button {
+    position: relative;
+    z-index: 2;
+    margin-top: 45px
+}
+
+.pricing-plan .list--check {
+    padding-left: 22px
+}
+
+.pricing-plan .list--check .list__item::after {
+    display: none
+}
+
+.pricing-plan .list--check .list__item::before {
+    left: -18px
+}
+
+.pricing-plan--bordered {
+    background: #e2e2e2;
+    padding: 1px;
+    -webkit-clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0)
+}
+
+.pricing-plan--bordered .pricing-plan__inner {
+    padding: 33px 30px 50px 30px;
+    background: #fff;
+    -webkit-clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0)
+}
+
+.pricing-plan--blue {
+    color: #fff;
+    -webkit-clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
+    background: #003d90
+}
+
+.pricing-plan--blue .pricing-plan__inner {
+    padding: 33px 30px 50px 30px
+}
+
+.pricing-plan--small {
+    padding: 0
+}
+
+.pricing-plan--small .pricing-plan__price {
+    margin: 24px 0 10px 0
+}
+
+.pricing-plan--small .pricing-plan__price span:first-of-type {
+    font-size: 50px
+}
+
+.pricing-plan--small .button {
+    margin-top: 35px
+}
+
+.pricing-plan--small .pricing-plan__inner {
+    padding: 33px 30px 40px 30px
+}
+
+.pricing-table {
+    padding: 20px 15px 30px 15px;
+    border-top: 1px solid #e2e2e2;
+    text-align: center
+}
+
+@media only screen and (min-width:992px) {
+    .pricing-table {
+        text-align: left;
+        padding: 20px 15px 19px 15px
+    }
+}
+
+.pricing-table__title {
+    margin-bottom: 10px
+}
+
+@media only screen and (min-width:1200px) {
+    .pricing-table__title {
+        margin-bottom: 0
+    }
+}
+
+.pricing-table__price {
+    letter-spacing: -.050em;
+    font-weight: 700;
+    margin: 5px 0
+}
+
+@media only screen and (min-width:1200px) {
+    .pricing-table__price {
+        margin: 0
+    }
+}
+
+.pricing-table__price span {
+    display: inline-block
+}
+
+.pricing-table__price span:first-of-type {
+    font-size: 36px;
+    margin-right: 10px
+}
+
+@media only screen and (min-width:1200px) {
+    .pricing-table__price span:first-of-type {
+        font-size: 50px
+    }
+}
+
+.pricing-table__price span:last-of-type {
+    font-size: 20px;
+    text-transform: uppercase
+}
+
+@media only screen and (min-width:1200px) {
+    .pricing-table__price span:last-of-type {
+        font-size: 30px
+    }
+}
+
+.pricing-table--blue {
+    color: #fff;
+    background: #003d90;
+    border: none
+}
+.pricing-plan {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px
+}
+.list--check .list__item::after {
+    content: "";
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #f3f6f5;
+    position: absolute;
+    top: 6px;
+    left: -30px
+}
+
+.list--check .list__item.item--disabled {
+    opacity: .3
+}
+
+.list--check .list__item::before {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 6px;
+    border-left: 2px solid #00997d;
+    border-top: 2px solid #00997d;
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: absolute;
+    top: 10px;
+    left: -23px;
+    z-index: 1;
+}
+
+
+
+
+
+
+    </style> 
 </head>
 
 <body>
@@ -288,12 +541,12 @@ svg {
 </footer> -->
 
 
-<div class="page-wrapper">
-    <!-- menu dropdown start-->
+<!-- <div class="page-wrapper">
+   
 
             
         
-        <!-- section start-->
+        
         <section class="section bg--lgray" style="padding-top: 100px;">
             <div class="container">
                 <div class="row align-items-end bottom-70">
@@ -352,15 +605,106 @@ svg {
                     </div>
                 </div>
             </div>
-        </section><!-- section end-->
+        </section>
         
 
 
 
 
+</div> -->
+
+<div class="page-wrapper">
+
+    <!-- section start-->
+    <section class="section bg--lgray">
+        <div class="container">
+            <div class="row bottom-50">
+                <div class="col-12">
+                    <div class="heading heading--center"><span class="heading__pre-title">Pricing</span>
+                        <h3 class="heading__title">The right price for you, <span
+                                class="color--green">whoever</span> you are</h3><span
+                            class="heading__layout layout--lgray">Pricing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row offset-50">
+                <div class="col-sm-9 col-md-6 col-xl-3">
+                    <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
+                        <div class="pricing-plan__inner">
+                            <h5 class="pricing-plan__title">One pack</h5>
+                            <div class="pricing-plan__price"><span>95</span> <span>usd</span></div>
+                            <ul class="list list--check list--reset">
+                                <li class="list__item">1 warehouse</li>
+                                <li class="list__item">Custom business rules</li>
+                                <li class="list__item item--disabled">Real-time rate shopping</li>
+                                <li class="list__item item--disabled">100 freight shipments</li>
+                            </ul><a class="button button--green" href="#"><span>Get started</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-6 col-xl-3">
+                    <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
+                        <div class="pricing-plan__inner">
+                            <h5 class="pricing-plan__title">Starter pack</h5>
+                            <div class="pricing-plan__price"><span>100</span> <span>usd</span></div>
+                            <ul class="list list--check list--reset">
+                                <li class="list__item">1 warehouse</li>
+                                <li class="list__item">Custom business rules</li>
+                                <li class="list__item item--disabled">Real-time rate shopping</li>
+                                <li class="list__item item--disabled">100 freight shipments</li>
+                            </ul><a class="button button--green" href="#"><span>Get started</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-6 col-xl-3">
+                    <div class="pricing-plan pricing-plan--bordered pricing-plan--small">
+                        <div class="pricing-plan__inner">
+                            <h5 class="pricing-plan__title">Regular <span class="color--green">pack</span></h5>
+                            <div class="pricing-plan__price"><span>150</span> <span>usd</span></div>
+                            <ul class="list list--check list--reset">
+                                <li class="list__item">1 warehouse</li>
+                                <li class="list__item">Custom business rules</li>
+                                <li class="list__item">Real-time rate shopping</li>
+                                <li class="list__item item--disabled">100 freight shipments</li>
+                            </ul><a class="button button--green" href="#"><span>Get started</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-6 col-xl-3">
+                    <div class="pricing-plan pricing-plan--blue pricing-plan--small">
+                        <img  class="pricing-plan__bg" src="images/img-price_background.png" alt="img">
+                        <div class="pricing-plan__inner">
+                            <h5 class="pricing-plan__title">Premium pack</h5>
+                            <div class="pricing-plan__price"><span>255</span> <span>usd</span></div>
+                            <ul class="list list--check list--reset">
+                                <li class="list__item">1 warehouse</li>
+                                <li class="list__item">Custom business rules</li>
+                                <li class="list__item">Real-time rate shopping</li>
+                                <li class="list__item">100 freight shipments</li>
+                            </ul><a class="button button--white" href="#"><span>Get started</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow"></use>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- section end-->
+
 </div>
-
-
 
 
 
@@ -393,6 +737,7 @@ svg {
     <script src="js/js-jquery.magnific-popup.min.js"></script><!-- Odometer JS -->
   
     <script src="js/js-custom.js"></script>
+
 	<div style="display: none">
         <?xml version="1.0" encoding="utf-8"?>
         
@@ -440,8 +785,14 @@ svg {
 				<path
 					d="M50 54a1 1 0 01-.707-.293l-3-3a1 1 0 011.414-1.414L50 51.586l6.293-6.293a1 1 0 011.414 1.414l-7 7A1 1 0 0150 54z">
 				</path>
+            </symbol>
+
+            <symbol viewbox="0 0 150 78.6" id="arrow" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0 31.5h150v12.7H0V31.5zM112.8-.1l30.9 31.5-8.8 9L104 8.9l8.8-9zm18.1 51l-18.4 18.8 8.9 9 18.4-18.8-8.9-9z">
+				</path>
 			</symbol>
-		</svg></div>
+		</svg></div> 
 
 
 
