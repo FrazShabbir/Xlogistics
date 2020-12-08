@@ -771,10 +771,95 @@ svg {
     background: #00997d
 }
 
+.logos-slider .slick-list {
+    margin: 0 -15px
+}
+
+.logos-slider .slick-slide {
+    margin: 0 15px
+}
+
+.logos-slider .slick-dots {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    margin-top: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.logos-slider__item {
+    position: relative;
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 150px
+}
+
+.logos-slider__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    -webkit-transition: -webkit-transform .6s;
+    transition: -webkit-transform .6s;
+    -o-transition: transform .6s;
+    transition: transform .6s;
+    transition: transform .6s, -webkit-transform .6s
+}
+
+.logos-slider__item:hover::before {
+    -webkit-transform: scale(.86);
+    -ms-transform: scale(.86);
+    transform: scale(.86)
+}
+
+.logos-slider__dots {
+    text-align: center
+}
+
+.logos-slider__dots .slick-dots {
+    margin-top: 40px
+}
+
+.logos-slider__item img {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    max-width: 150px;
+    max-height: 110px;
+    height: auto;
+    -webkit-transition: -webkit-transform .8s;
+    transition: -webkit-transform .8s;
+    -o-transition: transform .8s;
+    transition: transform .8s;
+    transition: transform .8s, -webkit-transform .8s
+}
+
+.logos-slider--style-2 .logos-slider__item {
+    border: 1px solid #e2e2e2
+}
+
 #client {
-    padding: 5%;
+    padding-bottom: 5%;
 }
 
 .client-logo {
-    padding: 10%;
+    padding: 5%Impoortant;
+}
+
+.set-mg {
+    margin-left: 5%;
+    margin-right: 5%;
 }
