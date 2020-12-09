@@ -863,3 +863,28 @@ svg {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+/*--------------Service Area----*/
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.set-cont {
+    width: 20%;
+    filter: brightness(0) invert(1)
+}
+
+.hello:hover {
+    filter: grayscale(100%);
+}
+
+.safe-text {
+    color: #000;
+    font-size: xx-large;
+    font-weight: bolder;
+}
