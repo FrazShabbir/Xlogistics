@@ -888,3 +888,11 @@ svg {
     font-size: xx-large;
     font-weight: bolder;
 }
+
+.feature-icon {
+    width: 20%;
+}
+
+.b-filter {
+    filter: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%);
+}

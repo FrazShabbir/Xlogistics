@@ -1,3 +1,23 @@
+$("#owl-client2").owlCarousel({
+    pagination: false,
+    center: true,
+    loop: true,
+    margin: 0,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
 jQuery(function($) {
     'use strict';
 
@@ -482,24 +502,3 @@ jQuery(function($) {
     // });
 
 })(jQuery);
-
-$("#owl-client").owlCarousel({
-    pagination: false,
-    center: true,
-    loop: true,
-    margin: 0,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 3
-        },
-        1000: {
-            items: 4
-        }
-    }
-});
