@@ -56,6 +56,7 @@ This files table contents are outlined below>>>>>
     --grey-color: #555555;
     --black-color: #1a1a1a;
     --purple-color: #44318D;
+    --light-purple-color: #4f4577;
 }
 
 
@@ -1263,7 +1264,6 @@ Transportation Area
 =================================================*/
 
 .transportation-area {
-    background: var(--purple-color);
     position: relative;
 }
 
@@ -1279,11 +1279,11 @@ Transportation Area
 }
 
 .transportation-area .transportation-form .section-title span {
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .section-title h2 {
-    color: #ffffff;
+    color: #000!important;
     font-size: 30px;
 }
 
@@ -1304,27 +1304,27 @@ Transportation Area
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .form-control:hover {
-    border-bottom: 1px solid #f7941d;
+    border-bottom: 1px solid var(--purple-color)!important;
 }
 
 .transportation-area .transportation-form .form-control::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .form-control:-ms-input-placeholder {
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .form-control::placeholder {
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form .mb-30 {
@@ -1352,14 +1352,14 @@ Transportation Area
 }
 
 .transportation-area .transportation-form .form-btn .default-btn-two:hover {
-    border: 1px solid #301d44;
+    border: 1px solid #000000;
     background: #301d44;
 }
 
 .transportation-area .transportation-form h3 {
     font-size: 16px;
     font-weight: 500;
-    color: #ffffff;
+    color: #000!important;
 }
 
 .transportation-area .transportation-form h3 span {
@@ -1374,7 +1374,7 @@ Transportation Area
 }
 
 .popup-video::before {
-    background: #301d44;
+    background: var(--purple-color);
     content: '';
     height: 100%;
     width: 100%;
@@ -1394,8 +1394,8 @@ Transportation Area
 }
 
 .popup-video .video-btn a {
-    background: #ffffff;
-    color: #f7941d;
+    background: var(--purple-color)!important;
+    color: var(--purple-color);
     height: 90px;
     width: 90px;
     position: absolute;
@@ -1560,31 +1560,32 @@ p:last-child {
 }
 
 .default-btn-one {
-    background-color: #f7941d;
+    background-color: var(--purple-color);
     color: #ffffff;
     display: inline-block;
     padding: 15px 30px;
     border-radius: 2px;
-    border: 1px solid #f7941d;
+    border: 1px solid var(--purple-color);
 }
 
 .default-btn-one:hover {
-    background: var(--purple-color);
+    background: var(--light-purple-color)!important;
     border: 1px solid var(--purple-color);
     color: #ffffff;
 }
 
 .default-btn-two {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--purple-color);
     display: inline-block;
     color: #ffffff;
     padding: 15px 30px;
     border-radius: 2px;
+    background-color: var(--purple-color)!important;
 }
 
 .default-btn-two:hover {
-    background: #f7941d;
-    border: 1px solid #f7941d;
+    background: var(--light-purple-color)!important;
+    border: 1px solid var(--purple-color);
     color: #ffffff;
 }
 
@@ -3584,3 +3585,116 @@ p.testimonialFrom {
 
 
 /* ============== End Testimonial Flexbox ============= */
+
+
+/*===============Team =======*/
+
+.gray {
+    color: #a5a5a5;
+}
+
+.team {
+    margin: 40px;
+}
+
+.team-member {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.team-member figure {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.team-member figure img {
+    min-width: 100%;
+}
+
+.team-member figcaption p {
+    font-size: 16px;
+}
+
+.team-member figcaption ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.team-member figcaption ul {
+    visibility: visible;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.team-member figcaption ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.team-member h4 {
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+.team-member figcaption {
+    padding: 50px;
+    color: transparent;
+    background-color: transparent;
+    position: absolute;
+    z-index: 996;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption {
+    visibility: visible;
+    color: #fff;
+    background: var(--purple-color);
+    /* Primary color, can be changed via colors.css */
+    height: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.team-member figure:hover figcaption ul li a:hover {
+    color: rgba(49, 49, 49, .97);
+}
+
+.team-member figure img {
+    -webkit-transform: scale(1) rotate(0) translateY(0);
+    -moz-transform: scale(1) rotate(0) translateY(0);
+    -o-transform: scale(1) rotate(0) translateY(0);
+    -ms-transform: scale(1) rotate(0) translateY(0);
+    transform: scale(1) rotate(0) translateY(0);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.team-member figure:hover img {
+    -webkit-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -moz-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -o-transform: scale(1.1) rotate(1deg) translateY(12px);
+    -ms-transform: scale(1.1) rotate(1deg) translateY(12px);
+    transform: scale(1.1) rotate(1deg) translateY(12px);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
