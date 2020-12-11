@@ -3636,6 +3636,10 @@ p.testimonialFrom {
     padding: 10px;
 }
 
+figcaption ul li a i {
+    color: white;
+}
+
 .team-member h4 {
     margin: 10px 0 0;
     padding: 0;
