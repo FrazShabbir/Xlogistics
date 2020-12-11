@@ -44,6 +44,7 @@ This files table contents are outlined below>>>>>
 ** - Common Form CSS
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -658,7 +659,7 @@ button:focus {
 }
 
 .main-nav.three {
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid var(--white-color);
 }
 
 
@@ -735,32 +736,44 @@ p:last-child {
 }
 
 .default-btn-one {
-    background-color: #f7941d;
-    color: #ffffff;
+    color: var(--white-color);
     display: inline-block;
     padding: 15px 30px;
     border-radius: 2px;
     border: 1px solid #f7941d;
+}
+
+.default-btn-one a {
+    color: var(--white-color);
+    display: inline-block;
 }
 
 .default-btn-one:hover {
     background: var(--purple-color);
     border: 1px solid var(--purple-color);
-    color: #ffffff;
+    color: var(--white-color);
+}
+
+.default-btn-one a:hover {
+    background: var(--purple-color);
+    color: var(--white-color);
 }
 
 .default-btn-two {
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white-color);
     display: inline-block;
-    color: #ffffff;
+    color: var(--white-color);
     padding: 15px 30px;
     border-radius: 2px;
 }
 
+.default-btn-two a {
+    display: inline-block;
+    color: var(--white-color);
+}
+
 .default-btn-two:hover {
-    background: #f7941d;
-    border: 1px solid #f7941d;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .section-title {
@@ -786,7 +799,7 @@ p:last-child {
 }
 
 .bg-f9f9f9 {
-    background-color: #f9f9f9;
+    background-color: var(--white-color);
 }
 
 
@@ -895,7 +908,7 @@ Search Overlay CSS
     height: 3px;
     float: left;
     margin-bottom: 5px;
-    background-color: #fff;
+    background-color: var(--white-color);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
 }
@@ -912,7 +925,6 @@ Search Overlay CSS
 }
 
 .search-overlay .search-overlay-close:hover .search-overlay-close-line {
-    background: #f7941d;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
@@ -996,7 +1008,7 @@ Search Overlay CSS
     right: 5px;
     top: 5px;
     width: 50px;
-    color: #fff;
+    color: var(--white-color);
     height: 50px;
     border-radius: 50%;
     background-color: #f7941d;
@@ -1009,7 +1021,7 @@ Search Overlay CSS
 
 .search-overlay .search-overlay-form form button:hover {
     background-color: #301d44;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .search-overlay.search-overlay-active.search-overlay {
@@ -1078,7 +1090,7 @@ Hero Slider Area
 }
 
 .hero-slider .banner-content span {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
     display: inline-block;
@@ -1086,13 +1098,13 @@ Hero Slider Area
 }
 
 .hero-slider .banner-content h1 {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 70px;
     margin-bottom: 15px;
 }
 
 .hero-slider .banner-content p {
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 40px;
@@ -1113,7 +1125,7 @@ Hero Slider Area
     top: 50%;
     font-size: 40px;
     line-height: 1;
-    color: #f3f2f3;
+    color: var(--white-color);
     margin: -30px 0 0;
 }
 
@@ -1154,8 +1166,7 @@ Hero Contact Area
 }
 
 .contact-area .contact-content .contact-card i {
-    background: #ffffff;
-    color: #f7941d;
+    background: var(--white-color);
     font-size: 30px;
     width: 40px;
     height: 40px;
@@ -1171,17 +1182,17 @@ Hero Contact Area
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .contact-area .contact-content .contact-card p {
     font-size: 14px;
     margin-bottom: 0;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .contact-area .contact-content .contact-card p a {
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 
@@ -1196,8 +1207,8 @@ Choose Area
 .choose-area .choose-contant {
     padding: 15px 20px;
     margin-bottom: 30px;
-    -webkit-box-shadow: 0px -1px 20px 0px #f3efef;
-    box-shadow: 0px -1px 20px 0px #f3efef;
+    -webkit-box-shadow: 0px -1px 20px 0px var(--white-color);
+    box-shadow: 0px -1px 20px 0px var(--white-color);
     border-radius: 5px;
 }
 
@@ -1212,7 +1223,7 @@ Choose Area
 
 .choose-area .choose-contant .choose-card i {
     background: var(--purple-color);
-    color: #ffffff;
+    color: var(--white-color);
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -1415,7 +1426,7 @@ Transportation Area
 }
 
 .popup-video .video-btn a .ripple {
-    background: #ffffff;
+    background: var(--white-color);
     position: absolute;
     width: 150px;
     height: 150px;
@@ -1467,49 +1478,6 @@ Transportation Area
 
 
 /*--------------------------------------------------------------------------------------*/
-
-
-/*
-@File: Ferry Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS
-
-*******************************************
-/*
-
-/*================================================
-Default CSS
-=================================================*/
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    color: #6c6377;
-}
-
-img {
-    max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #301d44;
-    font-weight: 600;
-}
 
 a {
     -webkit-transition: all 0.7s;
@@ -1982,8 +1950,22 @@ Hero Contact Area
 
 .contact-area .contact-content .contact-card i {
     background: #ffffff;
-    color: #f7941d;
+    color: var(--purple-color);
     font-size: 30px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.contact-area .contact-content .contact-card i:hover {
+    background: #ffffff;
+    color: var(--light-purple-color);
+    font-size: 40px;
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -2039,7 +2021,20 @@ Choose Area
 
 .choose-area .choose-contant .choose-card i {
     background: var(--purple-color);
-    color: #ffffff;
+    color: var(--white-color);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
+
+.choose-area .choose-contant .choose-card i:hover {
+    background: var(--white-color);
+    color: var(--light-purple-color);
     width: 80px;
     height: 80px;
     line-height: 80px;
@@ -2188,7 +2183,7 @@ Transportation Area
 .transportation-area .transportation-form h3 {
     font-size: 16px;
     font-weight: 500;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 .transportation-area .transportation-form h3 span {
@@ -2223,8 +2218,8 @@ Transportation Area
 }
 
 .popup-video .video-btn a {
-    background: #ffffff;
-    color: #f7941d;
+    background: var(--white-color);
+    color: var(--white-color);
     height: 90px;
     width: 90px;
     position: absolute;
@@ -2243,7 +2238,7 @@ Transportation Area
 }
 
 .popup-video .video-btn a .ripple {
-    background: #ffffff;
+    background: var(--white-color);
     position: absolute;
     width: 150px;
     height: 150px;
@@ -2311,7 +2306,7 @@ Transportation Area
 }
 
 .site-footer h6 {
-    color: #fff;
+    color: var(--white-color);
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 5px;
@@ -2714,8 +2709,16 @@ Transportation Area
 }
 
 .icon-item .icon {
-    color: #003d90;
+    color: var(--purple-color)!important;
     font-size: 60px;
+}
+
+
+/*---Icon size change--*/
+
+.icon-item .icon:hover {
+    color: var(--light-purple-color)!important;
+    font-size: 70px;
 }
 
 .icon {
@@ -3186,20 +3189,22 @@ svg {
 
 .set-cont {
     width: 20%;
+    filter: brightness(0) invert(1)
+    /* filter: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%)!important; */
+}
+
+.set-cont:hover {
+    width: 30%;
     /* filter: brightness(0) invert(1) */
     filter: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%)!important;
 }
 
-.set-cont:hover {
-    filter: brightness(0) invert(1)!important;
-}
-
 .centered .two {
-    color: var(--yellow)!important;
+    color: var(--white-color)!important;
 }
 
 .centered .two:hover {
-    color: #fff !important;
+    color: var(--purple-color) !important;
 }
 
 .safe-text {
@@ -3552,10 +3557,10 @@ label:first-letter {
 }
 
 .label_testimonial-1:hover {
-    background-image: -webkit-gradient( linear, left top, right top, from(#ffffff), to(#d64541a3));
-    background-image: -webkit-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: -o-linear-gradient(left, #ffffff, #d64541a3);
-    background-image: linear-gradient(to right, #ffffff, #d64541a3);
+    background-image: -webkit-gradient( linear, left top, right top, from(var(--white-color)), to(#d64541a3));
+    background-image: -webkit-linear-gradient(left, var(--white-color), #d64541a3);
+    background-image: -o-linear-gradient(left, var(--white-color), #d64541a3);
+    background-image: linear-gradient(to right, var(--white-color), #d64541a3);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -3563,10 +3568,10 @@ label:first-letter {
 }
 
 .label_testimonial-2:hover {
-    background-image: -webkit-gradient( linear, left top, right top, from(#ffffff), to(#f5d76e59));
-    background-image: -webkit-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: -o-linear-gradient(left, #ffffff, #f5d76e59);
-    background-image: linear-gradient(to right, #ffffff, #f5d76e59);
+    background-image: -webkit-gradient( linear, left top, right top, from(var(--white-color)), to(#f5d76e59));
+    background-image: -webkit-linear-gradient(left, var(--white-color), #f5d76e59);
+    background-image: -o-linear-gradient(left, var(--white-color), #f5d76e59);
+    background-image: linear-gradient(to right, var(--white-color), #f5d76e59);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -3574,10 +3579,10 @@ label:first-letter {
 }
 
 .label_testimonial-3:hover {
-    background-image: -webkit-gradient( linear, left top, right top, from(#ffffff), to(#00b16aa3));
-    background-image: -webkit-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: -o-linear-gradient(left, #ffffff, #00b16aa3);
-    background-image: linear-gradient(to right, #ffffff, #00b16aa3);
+    background-image: -webkit-gradient( linear, left top, right top, from(var(--white-color)), to(#00b16aa3));
+    background-image: -webkit-linear-gradient(left, var(--white-color), #00b16aa3);
+    background-image: -o-linear-gradient(left, var(--white-color), #00b16aa3);
+    background-image: linear-gradient(to right, var(--white-color), #00b16aa3);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -3585,10 +3590,10 @@ label:first-letter {
 }
 
 .label_testimonial-4:hover {
-    background-image: -webkit-gradient( linear, left top, right top, from(#ffffff), to(#f27935a3));
-    background-image: -webkit-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: -o-linear-gradient(left, #ffffff, #f27935a3);
-    background-image: linear-gradient(to right, #ffffff, #f27935a3);
+    background-image: -webkit-gradient( linear, left top, right top, from(var(--white-color)), to(#f27935a3));
+    background-image: -webkit-linear-gradient(left, var(--white-color), #f27935a3);
+    background-image: -o-linear-gradient(left, var(--white-color), #f27935a3);
+    background-image: linear-gradient(to right, var(--white-color), #f27935a3);
     font-size: 1.2rem;
     -webkit-transition: font-size 0.5s;
     -o-transition: font-size 0.5s;
@@ -3658,7 +3663,7 @@ p.testimonialFrom {
 }
 
 figcaption ul li a i {
-    color: white;
+    color: var(--white-color);
 }
 
 .team-member h4 {
@@ -3686,7 +3691,7 @@ figcaption ul li a i {
 
 .team-member figure:hover figcaption {
     visibility: visible;
-    color: #fff;
+    color: var(--white-color);
     background: var(--purple-color);
     /* Primary color, can be changed via colors.css */
     height: 100%;
