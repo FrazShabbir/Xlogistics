@@ -57,6 +57,9 @@ This files table contents are outlined below>>>>>
     /* --light-purple-color: #4f4577; */
     --light-purple-color: #932432;
     --yellow: #f3941d;
+    --facebook: #4267b2;
+    --linkedin: #3666c2;
+    --twitter: #4ca1f3;
 }
 
 
@@ -3048,6 +3051,18 @@ figcaption ul li a i {
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.fb:hover:hover {
+    color: var(--facebook);
+}
+
+.ln:hover {
+    color: var(--linkedin);
+}
+
+.tw:hover {
+    color: var(--twitter);
 }
 
 .team-member figure:hover figcaption ul li a:hover {
