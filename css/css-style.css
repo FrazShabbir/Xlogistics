@@ -1550,7 +1550,7 @@ Transportation Area
 
 .popup-video .video-btn a {
     background: var(--white-color);
-    color: var(--white-color);
+    color: var(--light-purple-color);
     height: 90px;
     width: 90px;
     position: absolute;
@@ -1558,7 +1558,7 @@ Transportation Area
     margin: -50px 0 0 -30px;
     border-radius: 100px;
     z-index: 1;
-    font-size: 65px;
+    font-size: 55px;
     padding-left: 8px;
     line-height: 90px;
 }
@@ -1569,7 +1569,7 @@ Transportation Area
 }
 
 .popup-video .video-btn a .ripple {
-    background: var(--white-color);
+    background: var(--purple-color);
     position: absolute;
     width: 150px;
     height: 150px;
