@@ -56,8 +56,19 @@ This files table contents are outlined below>>>>>
     --white-color: #ffffff;
     --grey-color: #555555;
     --black-color: #1a1a1a;
-    --purple-color: #44318D;
-    --light-purple-color: #4f4577;
+    /* work and features filter */
+    /* --filtertwo: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%); */
+    /* Services filter */
+    /* --filterone: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%); */
+    /* #DE354C filter*/
+    --filterone: invert(28%) sepia(97%) saturate(1686%) hue-rotate(331deg) brightness(89%) contrast(94%);
+    --filtertwo: invert(28%) sepia(97%) saturate(1686%) hue-rotate(331deg) brightness(89%) contrast(94%);
+    /* white filter */
+    --whitefilter: brightness(0) invert(1);
+    /* --purple-color: #44318D; */
+    --purple-color: #c94355;
+    /* --light-purple-color: #4f4577; */
+    --light-purple-color: #932432;
     --yellow: #f3941d;
 }
 
@@ -740,7 +751,7 @@ p:last-child {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 2px;
-    border: 1px solid #f7941d;
+    border: 1px solid var(--purple-color);
 }
 
 .default-btn-one a {
@@ -755,7 +766,6 @@ p:last-child {
 }
 
 .default-btn-one a:hover {
-    background: var(--purple-color);
     color: var(--white-color);
 }
 
@@ -2584,7 +2594,7 @@ Transportation Area
 
 .heading__pre-title {
     display: inline-block;
-    color: #a9aeb3;
+    color: var(--purple-color);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .15em;
@@ -2595,7 +2605,7 @@ Transportation Area
 }
 
 .heading__pre-title {
-    color: #d8dde1
+    color: var(--purple-color)
 }
 
 .heading__title {
@@ -2735,18 +2745,6 @@ svg {
 
 
 /*-Pring area-*/
-
-.heading__pre-title {
-    display: inline-block;
-    color: #a9aeb3;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    margin-bottom: 17px;
-    z-index: 1;
-    position: relative
-}
 
 .pricing-plan__bg {
     position: absolute;
@@ -3189,14 +3187,12 @@ svg {
 
 .set-cont {
     width: 20%;
-    filter: brightness(0) invert(1)
-    /* filter: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%)!important; */
+    filter: var(--whitefilter)
 }
 
 .set-cont:hover {
     width: 30%;
-    /* filter: brightness(0) invert(1) */
-    filter: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%)!important;
+    filter: var(--filtertwo)!important;
 }
 
 .centered .two {
@@ -3218,7 +3214,8 @@ svg {
 }
 
 .b-filter {
-    filter: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%);
+    /* filter: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%); */
+    filter: var(--filterone);
 }
 
 
