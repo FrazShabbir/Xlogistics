@@ -1,5 +1,5 @@
 /*
-@File: Tranx Template Style
+@File: Xlogistics Template Style
 
 * This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
@@ -140,6 +140,10 @@ img {
     padding-bottom: 50px;
 }
 
+.pto-50 {
+    padding-top: 50px;
+}
+
 .ptb-10 {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -171,6 +175,10 @@ img {
 
 .pl-50 {
     padding-right: 20%;
+}
+
+.mto-40 {
+    margin-top: 50px;
 }
 
 button:focus {
@@ -2442,6 +2450,15 @@ Transportation Area
     }
 }
 
+@media only screen and (max-width:575px) {
+    .copyright-text {
+        text-align: center;
+    }
+    .terms2 {
+        text-align: center!important;
+    }
+}
+
 .social-icons {
     padding-left: 0;
     margin-bottom: 0;
@@ -2563,6 +2580,13 @@ Transportation Area
 }
 
 .terms a {
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.terms2 a {
     color: #818a91;
     font-size: 16px;
     display: inline-block;
