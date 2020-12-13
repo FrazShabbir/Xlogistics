@@ -2378,7 +2378,7 @@ Pricing Area
 }
 
 .button--filled {
-    color: #fff;
+    color: var(--white-color);
     font-size: 14px;
     background: var(--purple-color)!important;
     height: 70px;
@@ -3148,6 +3148,10 @@ Contact Area Used Transpotation Form
     width: 100%;
     height: 600px;
     border: 0;
+}
+
+.calling {
+    font-size: 16px;
 }
 
 
