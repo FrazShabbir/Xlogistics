@@ -191,12 +191,16 @@ button:focus {
     margin-bottom: 30px;
 }
 
+.mg-top-30 {
+    margin-top: 30px;
+}
+
 .mrb-20 {
     margin-bottom: 20px;
 }
 
 .mrb-30 {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .heading-set {
@@ -1608,7 +1612,7 @@ Transportation Area
     left: 50%;
     top: 60%;
     opacity: 0;
-    margin: -75px 0 0 -75px;
+    margin: -85px 0 0 -75px;
     border-radius: 100px;
     -webkit-animation: ripple 1.8s infinite;
     animation: ripple 1.8s infinite;
@@ -1960,7 +1964,7 @@ Feature section
 
 @media only screen and (min-width:992px) {
     .bottom-70 {
-        margin-bottom: 70px!important
+        /* margin-bottom: 70px!important */
     }
 }
 
@@ -3014,7 +3018,7 @@ Teams Section
 }
 
 .team-member {
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     padding: 0;
 }
 
