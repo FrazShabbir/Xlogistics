@@ -965,10 +965,18 @@
     }
 }
 
-
-/* @media only screen and (max-width: 991px) {
-    #rm-icon {
-        visibility: hidden!important;
-        display: none!important;
+@media only screen and (max-width: 991px) {
+    .mob-center {
+        margin: auto;
+        text-align: center;
     }
-} */
+    .heading-set {
+        padding-bottom: 20px!important;
+        padding-top: 0px!important;
+    }
+    .image-set {
+        width: 50%;
+        display: block;
+        margin: 0 10% 0 10%;
+    }
+}
