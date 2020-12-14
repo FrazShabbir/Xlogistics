@@ -874,6 +874,7 @@
     .mob-center {
         margin: auto;
         text-align: center;
+        padding-bottom: 50px;
     }
     .heading-set {
         padding-bottom: 20px!important;
