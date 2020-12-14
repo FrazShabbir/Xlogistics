@@ -1740,37 +1740,6 @@ Site footer
     color: #fff;
 }
 
-@media (max-width:991px) {
-    .site-footer [class^=col-] {
-        margin-bottom: 30px
-    }
-}
-
-@media (max-width:767px) {
-    .site-footer {
-        padding-bottom: 0
-    }
-    .site-footer .copyright-text,
-    .site-footer .social-icons {
-        text-align: center
-    }
-}
-
-@media only screen and (max-width:575px) {
-    .copyright-text {
-        text-align: center;
-    }
-    .terms2 {
-        text-align: center!important;
-    }
-}
-
-@media only screen and (min-width:576px) {
-    .terms2 {
-        text-align: right!important;
-    }
-}
-
 .social-icons {
     padding-left: 0;
     margin-bottom: 0;
@@ -1835,14 +1804,6 @@ Site footer
 
 .social-icons a.dribbble:hover {
     background-color: #ea4c89
-}
-
-@media (max-width:767px) {
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600
-    }
 }
 
 .image-set {
@@ -1960,24 +1921,12 @@ Feature section
     margin-bottom: 50px!important
 }
 
-@media only screen and (min-width:992px) {
-    .bottom-70 {
-        /* margin-bottom: 70px!important */
-    }
-}
-
 .heading {
     position: relative
 }
 
 .front-blog .heading {
     margin-bottom: 33px
-}
-
-@media only screen and (min-width:1200px) {
-    .front-blog .heading {
-        margin-bottom: 43px
-    }
 }
 
 .heading__pre-title {
@@ -2004,13 +1953,6 @@ Feature section
     position: relative
 }
 
-@media only screen and (min-width:992px) {
-    .heading__title {
-        font-size: 40px;
-        line-height: 45px
-    }
-}
-
 .color--green {
     color: var(--purple-color)!important
 }
@@ -2033,24 +1975,6 @@ Feature section
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none
-}
-
-@media only screen and (min-width:992px) {
-    .heading__layout {
-        display: initial
-    }
-}
-
-@media only screen and (min-width:1200px) {
-    .heading__layout {
-        font-size: 100px
-    }
-}
-
-@media only screen and (min-width:1600px) {
-    .heading__layout {
-        font-size: 120px
-    }
 }
 
 .heading--center {
@@ -2151,12 +2075,6 @@ Pricing Area
     margin: 41px 0 21px 0
 }
 
-@media only screen and (min-width:992px) {
-    .pricing-plan__price {
-        margin: 51px 0 31px 0
-    }
-}
-
 .pricing-plan__price span {
     display: inline-block
 }
@@ -2164,12 +2082,6 @@ Pricing Area
 .pricing-plan__price span:first-of-type {
     font-size: 80px;
     margin-right: 10px
-}
-
-@media only screen and (min-width:992px) {
-    .pricing-plan__price span:first-of-type {
-        font-size: 100px
-    }
 }
 
 .pricing-plan__price span:last-of-type {
@@ -2234,33 +2146,14 @@ Pricing Area
     text-align: center
 }
 
-@media only screen and (min-width:992px) {
-    .pricing-table {
-        text-align: left;
-        padding: 20px 15px 19px 15px
-    }
-}
-
 .pricing-table__title {
     margin-bottom: 10px
-}
-
-@media only screen and (min-width:1200px) {
-    .pricing-table__title {
-        margin-bottom: 0
-    }
 }
 
 .pricing-table__price {
     letter-spacing: -.050em;
     font-weight: 700;
     margin: 5px 0
-}
-
-@media only screen and (min-width:1200px) {
-    .pricing-table__price {
-        margin: 0
-    }
 }
 
 .pricing-table__price span {
@@ -2272,21 +2165,9 @@ Pricing Area
     margin-right: 10px
 }
 
-@media only screen and (min-width:1200px) {
-    .pricing-table__price span:first-of-type {
-        font-size: 50px
-    }
-}
-
 .pricing-table__price span:last-of-type {
     font-size: 20px;
     text-transform: uppercase
-}
-
-@media only screen and (min-width:1200px) {
-    .pricing-table__price span:last-of-type {
-        font-size: 30px
-    }
 }
 
 .pricing-table--blue {
@@ -2751,60 +2632,8 @@ input:checked~.content-test {
     opacity: 1;
 }
 
-@media (min-width: 480px) {
-    #flex-container {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        min-height: auto;
-        height: 400px;
-        /* position: absolute; */
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    #left-zone .list {
-        border-right: 2px solid #cccccc;
-    }
-    .content-test {
-        width: 65%;
-        height: 100%;
-        pointer-events: auto;
-        -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%);
-        transform: translateY(-100%);
-    }
-    #left-zone {
-        width: 35%;
-    }
-    #right-zone {
-        height: 100%;
-        width: 65%;
-    }
-}
-
 
 /* If the screen size is 480px or less */
-
-@media (max-width: 480px) {
-    .content_testimonial-1 .picto {
-        padding-top: 100px;
-    }
-    .content_testimonial-2 .picto {
-        padding-top: 100px;
-    }
-    .content_testimonial-3 .picto {
-        padding-top: 100px;
-    }
-    .content_testimonial-4 .picto {
-        padding-top: 100px;
-    }
-    .item>label {
-        font-size: 1.3rem;
-    }
-}
 
 .content_testimonial-1 .picto {
     height: 100px;
@@ -3334,24 +3163,6 @@ h3 {
     background-color: var(--purple-color);
 }
 
-@media only screen and (max-width:991px) {
-    #blog-share-box-third {
-        margin-top: 9%;
-    }
-    .blog_share_box {
-        margin-top: 9%;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    #blog-share-box-second {
-        margin-top: 9%;
-    }
-    .blog_share_box {
-        margin-top: 9%;
-    }
-}
-
 
 /* #########  Blogs PAGINATION ###########*/
 
@@ -3419,34 +3230,6 @@ h3 {
     pointer-events: none;
 }
 
-@media (min-width: 350px) {
-    [data-pagination] {
-        font-size: 10pt;
-    }
-}
-
-@media (min-width: 500px) {
-    [data-pagination] {
-        font-size: 12pt;
-    }
-}
-
-@media (min-width: 700px) {
-    [data-pagination] {
-        font-size: 14pt;
-    }
-}
-
-@media (min-width: 900px) {
-    [data-pagination] {
-        font-size: 16pt;
-    }
-}
-
-.blog-grid-pagination {
-    margin-bottom: 30px;
-}
-
 
 /*================================================
 Blog detail page css
@@ -3467,12 +3250,6 @@ Blog detail page css
 
 .read_more_datecomment {
     font-size: 95%;
-}
-
-@media only screen and (max-width: 325px) {
-    .read_more_datecomment {
-        font-size: 76%;
-    }
 }
 
 .read_more_text h3 {
@@ -3657,12 +3434,6 @@ Blog detail page css
     position: absolute;
     top: 36px;
     right: 30px;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 500px) {
-    .search_icon {
-        top: 41px;
-    }
 }
 
 .categories ul {
