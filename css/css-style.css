@@ -1667,6 +1667,10 @@ Site footer
     color: #737373;
 }
 
+.subsbtn {
+    padding: 7px 30px!important;
+}
+
 .site-footer hr {
     border-top-color: #bbb;
     opacity: 0.5
