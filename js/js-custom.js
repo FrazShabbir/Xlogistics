@@ -1,3 +1,8 @@
+ setTimeout(function(){
+   $('.loader_bg').fadeToggle();
+  }, 1000);
+  
+                           
 $("#owl-client2").owlCarousel({
     pagination: false,
     center: true,
@@ -18,6 +23,7 @@ $("#owl-client2").owlCarousel({
         }
     }
 });
+
 
 var testimonialItems = document.querySelectorAll(".item label");
 var timer;
@@ -82,14 +88,6 @@ jQuery(function($) {
             $('.search-toggle').removeClass('opened').addClass('closed');
             $('.search-toggle, .search-area').removeClass('opened');
         }
-    });
-
-
-
-
-    // Preloader JS
-    jQuery(window).on('load', function() {
-        jQuery('.loader').fadeOut(500);
     });
 }(jQuery));
 

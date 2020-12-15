@@ -53,9 +53,9 @@ This files table contents are outlined below>>>>>
     /* white filter */
     --whitefilter: brightness(0) invert(1);
     /* --purple-color: #44318D; */
-    --purple-color: #c94355;
+    --purple-color: #ff0000;
     /* --light-purple-color: #4f4577; */
-    --light-purple-color: #932432;
+    --light-purple-color: #ff0000;
     --yellow: #f3941d;
     --facebook: #4267b2;
     --linkedin: #3666c2;
@@ -64,6 +64,90 @@ This files table contents are outlined below>>>>>
 
 
 /*----- Default CSS -----*/
+
+/*preloader css*/
+
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: #fff;
+    width: 100%;
+    height: 1100vh;
+  }
+  
+
+  .loader{
+	width: 100px;
+	height: 100px;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 50px);
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader::before{
+	content:'';
+	height: 100px;
+	width: 100px;
+	background: transparent;
+	border-radius: 50px;
+	border: 20px ridge;
+	border-width: 30px;
+	border-color: var(--purple-color) transparent;
+	animation: load 1s infinite;
+}
+
+  
+  @keyframes load{
+      50%{
+          transform: rotatez(180deg);
+      }
+      100%{
+          transform: rotatez(360deg);
+      }
+  }
+
+/* .loader_bg{
+	position: fixed;
+	background: #333333;
+	width: 100%;
+	height: auto;
+}
+
+.loader{
+	width: 100px;
+	height: 100px;
+	top: calc(50vh - 50px);
+	left: calc(50vw - 50px);
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+}
+
+.loader::before{
+	content:'';
+	height: 30px;
+	width: 30px;
+	background: transparent;
+	border-radius: 50px;
+	border: 20px ridge;
+	border-width: 25px;
+	border-color: #ff0000 transparent;
+	animation: load 1s infinite;
+}
+
+@keyframes load{
+	50%{
+		transform: rotatez(180deg);
+	}
+	100%{
+		transform: rotatez(360deg);
+	}
+}
+                            */
 
 html {
     scroll-behavior: smooth;
@@ -238,7 +322,7 @@ button:focus {
 }
 
 .main-nav nav .navbar-brand {
-    background-color: #fff;
+    background-color: #0c1239;
     display: inline-block;
     padding: 22px 60px;
 }
@@ -256,8 +340,6 @@ button:focus {
     color: var(--white-color);
     font-weight: 500;
     text-transform: capitalize;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .main-nav nav .navbar-nav .nav-item a::after {
@@ -326,7 +408,7 @@ button:focus {
 }
 
 .main-nav.menu-shrink .navbar-brand {
-    background-color: #fff;
+    background-color: #0c1239;
     display: inline-block;
     padding: 17px 60px;
 }
@@ -670,7 +752,7 @@ button:focus {
 }
 
 .main-nav.two {
-    background-color: var(--white-color);
+    background-color: #0c1239;
     opacity: 1;
 }
 
@@ -679,7 +761,8 @@ button:focus {
 }
 
 .main-nav.two nav .navbar-nav .nav-item a {
-    color: var(--black-color);
+    margin-left: 20px;
+    color: var(--white-color);
 }
 
 .main-nav.two nav .navbar-nav .nav-item a:hover,
@@ -689,11 +772,11 @@ button:focus {
 }
 
 .main-nav.two .side-nav ul li:nth-child(2) {
-    border-left: 1px solid var(--black-color);
+    border-left: 1px solid var(--white-color);
 }
 
 .main-nav.two .side-nav ul li .nav-srh .search-icon {
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .main-nav.two .side-nav ul li .nav-srh .search-icon:hover {
@@ -701,11 +784,11 @@ button:focus {
 }
 
 .main-nav.two .side-nav ul li .call i {
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .main-nav.two .side-nav ul li .call a {
-    color: var(--black-color);
+    color: var(--white-color);
 }
 
 .main-nav.two .side-nav ul li .call a:hover {
@@ -1384,20 +1467,6 @@ Choose Area
     position: absolute;
     left: 0;
 }
-
-.choose-area .choose-contant .choose-card i:hover {
-    background: var(--white-color);
-    color: var(--light-purple-color);
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    text-align: center;
-    font-size: 50px;
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-}
-
 .choose-area .choose-contant .choose-card h3 {
     font-weight: 600;
     font-size: 20px;
@@ -1522,10 +1591,11 @@ Transportation Area
 }
 
 .transportation-area .transportation-form .form-btn {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .transportation-area .transportation-form .form-btn .default-btn-one {
+    margin-bottom: 20px;
     border: none;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
@@ -1536,6 +1606,7 @@ Transportation Area
 }
 
 .transportation-area .transportation-form .form-btn .default-btn-two {
+    margin-bottom: 20px;
     background: none;
     -webkit-transition: all 0.7s;
     transition: all 0.7s;
@@ -1590,7 +1661,7 @@ Transportation Area
     width: 90px;
     position: absolute;
     text-align: center;
-    margin: -50px 0 0 -30px;
+    margin: -50px 0 0 -40px;
     border-radius: 100px;
     z-index: 1;
     font-size: 55px;
@@ -1660,13 +1731,26 @@ Site footer
 =================================================*/
 
 .site-footer {
-    background-color: #26272b;
+    background-color: #0c1239;
     padding: 80px 0 80px;
     font-size: 15px;
     line-height: 24px;
-    color: #737373;
+    color: #fff!important;
 }
 
+.p-5prc{
+    padding: 5%;
+}
+
+.footer-logo-txt p{
+    margin-top: 30px;
+    color: white;
+    line-height: 30px;
+    font-size: 16px;
+}
+.footer-logo-div{
+    padding: 5%;
+}
 .subsbtn {
     padding: 7px 30px!important;
 }
@@ -1707,13 +1791,14 @@ Site footer
 }
 
 .footer-links a {
-    color: #737373
+    color: #ffff;
+    line-height: 32px;
 }
 
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-    color: #3366cc;
+    color: #f00;
     text-decoration: none;
 }
 
@@ -1728,11 +1813,11 @@ Site footer
 .site-footer .social-icons a {
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 43px;
     margin-left: 6px;
     margin-right: 0;
     border-radius: 100%;
-    background-color: #33353d
+    background-color: #fff;
 }
 
 .copyright-text {
@@ -1766,7 +1851,7 @@ Site footer
 
 .social-icons a {
     background-color: #eceeef;
-    color: #818a91;
+    color: #f00;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
@@ -1839,7 +1924,6 @@ Site footer
     width: 80%;
     margin: 0 10% 0 10%;
 }
-
 .cte ul li a {
     padding-left: 10%;
     padding-right: 10%;
@@ -1853,16 +1937,18 @@ Site footer
 .abc {
     vertical-align: middle;
 }
-
+.terms p{
+    color: #bbbbbb;
+}
 .terms a {
-    color: #818a91;
+    color: #d1d1d1;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
 }
 
 .terms2 a {
-    color: #818a91;
+    color: #cccccc;
     font-size: 16px;
     display: inline-block;
     line-height: 44px;
@@ -1932,23 +2018,6 @@ Feature section
 .front-blog .heading {
     margin-bottom: 33px
 }
-
-.heading__pre-title {
-    display: inline-block;
-    color: var(--purple-color);
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    margin-bottom: 17px;
-    z-index: 1;
-    position: relative
-}
-
-.heading__pre-title {
-    color: var(--purple-color)
-}
-
 .heading__title {
     font-size: 32px;
     line-height: 40px;
@@ -1957,7 +2026,7 @@ Feature section
     position: relative
 }
 
-.color--green {
+.color--red {
     color: var(--purple-color)!important
 }
 
@@ -2017,7 +2086,9 @@ Feature section
 }
 
 .icon-item__text:last-of-type {
-    margin-bottom: 0
+    font-size: 16px;
+    color: black;
+    margin-bottom: 0;
 }
 
 .icon-item__img img {
@@ -2449,7 +2520,10 @@ Clients area
 /*================================================
 Service area
 =================================================*/
-
+#Services{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .centered {
     position: absolute;
     top: 70%;
@@ -2466,7 +2540,9 @@ Service area
     background-color: var(--light-purple-color);
     color: #fff;
 }
-
+.services-img{
+    margin-bottom: 30px;
+}
 .set-cont {
     width: 20%;
     filter: var(--whitefilter)
@@ -2847,9 +2923,12 @@ Teams Section
 .gray {
     color: #a5a5a5;
 }
-
+#team{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
 .team-member {
-    margin: 15px 0 0 0;
+    margin-bottom: 30px;
     padding: 0;
 }
 
@@ -2886,6 +2965,14 @@ Teams Section
     display: inline-block;
     padding: 10px;
 }
+.txt-fig{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    padding: 0 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 figcaption ul li a i {
     color: var(--white-color);
@@ -2897,7 +2984,6 @@ figcaption ul li a i {
 }
 
 .team-member figcaption {
-    padding: 50px;
     color: transparent;
     background-color: transparent;
     position: absolute;
@@ -2998,7 +3084,10 @@ Blog page css
     color: var(--purple-color);
     text-decoration: underline;
 }
-
+#blogssec{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
 .blogs_cover::before {
     background: #02448b80 none repeat scroll 0 0;
     content: "";
@@ -3046,7 +3135,6 @@ Blog page css
 .blog_share_details p a {
     font-weight: bold;
 }
-
 .bl_share_img img {
     width: 350px;
     height: 282px;
@@ -3118,7 +3206,7 @@ h3 {
 }
 
 .blog_share_details {
-    padding: 35px 20px 20px 30px;
+    padding: 35px 5px 35px 5px;
 }
 
 .blog_share_details .comment_author a {
@@ -3165,6 +3253,10 @@ h3 {
 
 .blogs_button .btn:hover {
     background-color: var(--purple-color);
+}
+.show-more a{
+    margin-top: 30px;
+    color: white;
 }
 
 
