@@ -169,9 +169,6 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    /* .txt-fig{
-        top: 40px;
-    } */
     .main-nav nav .navbar-brand {
         padding: 20px 10px;
     }
@@ -299,10 +296,6 @@
     .main-nav nav .navbar-brand {
         padding: 27px 10px;
     }
-    .main-nav nav .navbar-nav .nav-item a {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
     .side-nav ul li .modal-btn {
         padding: 41px 22px 40px;
     }
@@ -354,6 +347,14 @@
 }
 
 @media only screen and (max-width: 991px) {
+    .search-icon{
+        visibility: hidden;
+        display: none;
+    }
+    .first-btn{
+        position: relative!important;
+        top: 8px!important;
+    }
     .mean-container .mean-bar {
         background-color: var(--black-color);
     }
@@ -417,8 +418,6 @@
     }
 }
 
-
-/*# sourceMappingURL=responsive.css.map */
 
 @media only screen and (max-width: 767px) {
     .top-header .right-info li.mr-20:last-child {
@@ -650,15 +649,13 @@
     }
 }
 
-
-/*# sourceMappingURL=responsive.css.map */
-
 @media only screen and (max-width: 767px) {
     .top-header .right-info li.mr-20:last-child {
         margin-right: 0;
     }
     .hero-slider .banner-content {
         text-align: center;
+        bottom: 30px;
     }
     .hero-slider .banner-content h1 {
         font-size: 28px;
@@ -884,10 +881,6 @@
 }
 
 @media only screen and (max-width: 991px) {
-    /* .txt-fig{
-        top: 140px;
-        padding:0 40px;
-    } */
     .mob-center {
         margin: auto;
         text-align: center;
@@ -920,31 +913,16 @@
     }
 }
 
-@media only screen and (max-width:575px) {
+@media only screen and (max-width:767px) {
     .copyright-text {
-        text-align: center;
+        text-align: center!important;
     }
     .terms2 {
         text-align: center!important;
     }
 }
-/* @media only screen and (max-width:576px){
-    .txt-fig{
-        text-align: center;
-        position: relative;
-        top: 50%;
-        padding: 0 10px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-} */
-/* @media only screen and (max-width:767px) and (min-width:576px){
-    .txt-fig{
-        top: 280px;
-        padding:0 100px;
-    }
-} */
-@media only screen and (min-width:576px) {
+
+@media only screen and (min-width:767px) {
     .terms2 {
         text-align: right!important;
     }
@@ -1032,7 +1010,6 @@
         flex-direction: row;
         min-height: auto;
         height: 400px;
-        /* position: absolute; */
         top: 0;
         bottom: 0;
         left: 0;

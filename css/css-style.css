@@ -43,19 +43,11 @@ This files table contents are outlined below>>>>>
     --white-color: #ffffff;
     --grey-color: #555555;
     --black-color: #1a1a1a;
-    /* work and features filter */
-    /* --filtertwo: invert(19%) sepia(55%) saturate(1852%) hue-rotate(231deg) brightness(97%) contrast(97%); */
-    /* Services filter */
-    /* --filterone: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%); */
-    /* #DE354C filter*/
     --filterone: invert(28%) sepia(97%) saturate(1686%) hue-rotate(331deg) brightness(89%) contrast(94%);
     --filtertwo: invert(28%) sepia(97%) saturate(1686%) hue-rotate(331deg) brightness(89%) contrast(94%);
-    /* white filter */
     --whitefilter: brightness(0) invert(1);
-    /* --purple-color: #44318D; */
-    --purple-color: #ff0000;
-    /* --light-purple-color: #4f4577; */
-    --light-purple-color: #ff0000;
+    --red-color: #ff0000;
+    --light-red-color: #ff0000;
     --yellow: #f3941d;
     --facebook: #4267b2;
     --linkedin: #3666c2;
@@ -95,7 +87,7 @@ This files table contents are outlined below>>>>>
 	border-radius: 50px;
 	border: 20px ridge;
 	border-width: 30px;
-	border-color: var(--purple-color) transparent;
+	border-color: var(--red-color) var(--facebook) var(--red-color) var(--facebook);
 	animation: load 1s infinite;
 }
 
@@ -108,47 +100,6 @@ This files table contents are outlined below>>>>>
           transform: rotatez(360deg);
       }
   }
-
-/* .loader_bg{
-	position: fixed;
-	background: #333333;
-	width: 100%;
-	height: auto;
-}
-
-.loader{
-	width: 100px;
-	height: 100px;
-	top: calc(50vh - 50px);
-	left: calc(50vw - 50px);
-	display: flex;
-	position: absolute;
-	justify-content: center;
-	align-items: center;
-}
-
-.loader::before{
-	content:'';
-	height: 30px;
-	width: 30px;
-	background: transparent;
-	border-radius: 50px;
-	border: 20px ridge;
-	border-width: 25px;
-	border-color: #ff0000 transparent;
-	animation: load 1s infinite;
-}
-
-@keyframes load{
-	50%{
-		transform: rotatez(180deg);
-	}
-	100%{
-		transform: rotatez(360deg);
-	}
-}
-                            */
-
 html {
     scroll-behavior: smooth;
 }
@@ -333,7 +284,7 @@ button:focus {
 }
 
 .main-nav nav .navbar-nav .nav-item:hover a {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav nav .navbar-nav .nav-item a {
@@ -356,7 +307,7 @@ button:focus {
 .main-nav nav .navbar-nav .nav-item a:hover,
 .main-nav nav .navbar-nav .nav-item a:focus,
 .main-nav nav .navbar-nav .nav-item a.active {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu {
@@ -377,7 +328,7 @@ button:focus {
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li:hover a {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a i {
@@ -387,7 +338,7 @@ button:focus {
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:hover,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a:focus,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li a.active {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
@@ -398,7 +349,7 @@ button:focus {
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus,
 .main-nav nav .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav.menu-shrink {
@@ -450,7 +401,7 @@ button:focus {
 
 .side-nav ul li .call span {
     display: block;
-    color: var(--purple-color);
+    color: var(--red-color);
     margin-bottom: 2px;
 }
 
@@ -460,7 +411,7 @@ button:focus {
 }
 
 .side-nav ul li .call a:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .side-nav ul li .nav-srh {
@@ -493,7 +444,7 @@ button:focus {
 }
 
 .side-nav ul li .nav-srh .search-area .search-icon:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .side-nav ul li .nav-srh .search-area .src-input {
@@ -528,7 +479,7 @@ button:focus {
 }
 
 .side-nav ul li .nav-srh .search-icon:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .side-nav ul li .nav-srh .search-toggle .search-icon.icon-close {
@@ -588,7 +539,7 @@ button:focus {
     font-weight: 600;
     margin-bottom: 25px;
     color: #000;
-    border-bottom: 2px solid var(--purple-color);
+    border-bottom: 2px solid var(--red-color);
     padding-bottom: 5px;
     display: inline-block;
 }
@@ -621,7 +572,7 @@ button:focus {
 
 .modal-body .contact-area ul li i {
     display: inline-block;
-    color: var(--purple-color);
+    color: var(--red-color);
     font-size: 30px;
     position: absolute;
     top: 0;
@@ -635,7 +586,7 @@ button:focus {
 
 .modal-body .contact-area ul li a {
     display: inline-block;
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .modal-body .contact-area ul li a:hover {
@@ -683,7 +634,7 @@ button:focus {
     text-align: center;
     border-radius: 50%;
     color: var(--white-color);
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
 }
 
 .modal-body .social-area ul li a i {
@@ -716,7 +667,7 @@ button:focus {
 }
 
 #myModalRight .modal-header .close:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 #myModalRight .modal-content {
@@ -761,14 +712,14 @@ button:focus {
 }
 
 .main-nav.two nav .navbar-nav .nav-item a {
-    margin-left: 20px;
+    margin-left: 30px;
     color: var(--white-color);
 }
 
 .main-nav.two nav .navbar-nav .nav-item a:hover,
 .main-nav.two nav .navbar-nav .nav-item a:focus,
 .main-nav.two nav .navbar-nav .nav-item a.active {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav.two .side-nav ul li:nth-child(2) {
@@ -780,7 +731,7 @@ button:focus {
 }
 
 .main-nav.two .side-nav ul li .nav-srh .search-icon:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav.two .side-nav ul li .call i {
@@ -792,11 +743,11 @@ button:focus {
 }
 
 .main-nav.two .side-nav ul li .call a:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .main-nav.two .side-nav ul li .modal-btn {
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
 }
 
 .main-nav.two .side-nav ul li .modal-btn span {
@@ -888,7 +839,7 @@ p:last-child {
     display: inline-block;
     padding: 15px 30px;
     border-radius: 2px;
-    border: 1px solid var(--purple-color);
+    border: 1px solid var(--red-color);
 }
 
 .default-btn-one a {
@@ -897,8 +848,8 @@ p:last-child {
 }
 
 .default-btn-one:hover {
-    background: var(--purple-color);
-    border: 1px solid var(--purple-color);
+    background: var(--red-color);
+    border: 1px solid var(--red-color);
     color: var(--white-color);
 }
 
@@ -1208,32 +1159,32 @@ p:last-child {
 }
 
 .default-btn-one {
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
     color: #ffffff;
     display: inline-block;
     padding: 15px 30px;
     border-radius: 2px;
-    border: 1px solid var(--purple-color);
+    border: 1px solid var(--red-color);
 }
 
 .default-btn-one:hover {
-    background: var(--light-purple-color)!important;
-    border: 1px solid var(--purple-color);
+    background: var(--light-red-color)!important;
+    border: 1px solid var(--red-color);
     color: #ffffff;
 }
 
 .default-btn-two {
-    border: 1px solid var(--purple-color);
+    border: 1px solid var(--red-color);
     display: inline-block;
     color: #ffffff;
     padding: 15px 30px;
     border-radius: 2px;
-    background-color: var(--purple-color)!important;
+    background-color: var(--red-color)!important;
 }
 
 .default-btn-two:hover {
-    background: var(--light-purple-color)!important;
-    border: 1px solid var(--purple-color);
+    background: var(--light-red-color)!important;
+    border: 1px solid var(--red-color);
     color: #ffffff;
 }
 
@@ -1333,7 +1284,10 @@ Hero Slider Area
 .hero-slider.owl-theme .owl-nav {
     margin: 0;
 }
-
+.client-carousel{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
 .hero-slider.owl-theme .owl-nav .owl-prev,
 .hero-slider.owl-theme .owl-nav .owl-next {
     position: absolute;
@@ -1373,7 +1327,7 @@ Hero Contact Area
 }
 
 .contact-area .contact-content {
-    background: var(--purple-color);
+    background: var(--red-color);
     border-radius: 5px;
     padding: 50px 30px 20px;
 }
@@ -1386,7 +1340,7 @@ Hero Contact Area
 
 .contact-area .contact-content .contact-card i {
     background: #ffffff;
-    color: var(--purple-color);
+    color: var(--red-color);
     font-size: 30px;
     width: 40px;
     height: 40px;
@@ -1400,7 +1354,7 @@ Hero Contact Area
 
 .contact-area .contact-content .contact-card i:hover {
     background: #ffffff;
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
     font-size: 40px;
     width: 40px;
     height: 40px;
@@ -1456,7 +1410,7 @@ Choose Area
 }
 
 .choose-area .choose-contant .choose-card i {
-    background: var(--purple-color);
+    background: var(--red-color);
     color: var(--white-color);
     width: 80px;
     height: 80px;
@@ -1509,7 +1463,7 @@ Transportation Area
 =================================================*/
 
 .transportation-area {
-    background: var(--purple-color);
+    background: var(--red-color);
     position: relative;
 }
 
@@ -1543,7 +1497,7 @@ Transportation Area
     height: auto;
     padding: 15px 0;
     background-color: transparent;
-    border-bottom: 1px solid var(--light-purple-color);
+    border-bottom: 1px solid var(--light-red-color);
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -1557,7 +1511,7 @@ Transportation Area
     height: auto;
     padding: 15px 0;
     background-color: transparent;
-    border-bottom: 2px solid var(--purple-color)!important;
+    border-bottom: 2px solid var(--red-color)!important;
     border-top: 0;
     border-left: 0;
     border-right: 0;
@@ -1567,7 +1521,7 @@ Transportation Area
 }
 
 .transportation-area .transportation-form .form-control:hover {
-    border-bottom: 1px solid var(--purple-color);
+    border-bottom: 1px solid var(--red-color);
 }
 
 .transportation-area .transportation-form .form-control::-webkit-input-placeholder {
@@ -1656,7 +1610,7 @@ Transportation Area
 
 .popup-video .video-btn a {
     background: var(--white-color);
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
     height: 90px;
     width: 90px;
     position: absolute;
@@ -1675,7 +1629,7 @@ Transportation Area
 }
 
 .popup-video .video-btn a .ripple {
-    background: var(--purple-color);
+    background: var(--red-color);
     position: absolute;
     width: 150px;
     height: 150px;
@@ -1732,12 +1686,12 @@ Site footer
 
 .site-footer {
     background-color: #0c1239;
-    padding: 80px 0 80px;
+    padding-top: 80px;
+    padding-bottom: 60px;
     font-size: 15px;
     line-height: 24px;
     color: #fff!important;
 }
-
 .p-5prc{
     padding: 5%;
 }
@@ -1814,8 +1768,7 @@ Site footer
     width: 40px;
     height: 40px;
     line-height: 43px;
-    margin-left: 6px;
-    margin-right: 0;
+    margin-right: 6px;
     border-radius: 100%;
     background-color: #fff;
 }
@@ -1825,7 +1778,7 @@ Site footer
 }
 
 .subs button:hover {
-    background-color: var(--light-purple-color);
+    background-color: var(--light-red-color);
     color: #fff;
 }
 
@@ -1917,7 +1870,7 @@ Site footer
 .input-set {
     border-radius: 0px;
     border: #737373;
-    color: var(--purple-color)!important;
+    color: var(--red-color)!important;
 }
 
 .cte {
@@ -1929,7 +1882,11 @@ Site footer
     padding-right: 10%;
     width: 80%;
 }
-
+.ftr-last-row{
+    padding-left:20px;
+    padding-right: 50px;
+    background-color: #0a0e29;
+}
 .privacy {
     vertical-align: middle;
 }
@@ -1955,11 +1912,11 @@ Site footer
 }
 
 .terms a:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .ppanchar:hover {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .terms {
@@ -1972,7 +1929,7 @@ Site footer
 }
 
 .icon-align {
-    text-align: center!important;
+    text-align: left!important;
 }
 
 
@@ -2027,7 +1984,7 @@ Feature section
 }
 
 .color--red {
-    color: var(--purple-color)!important
+    color: var(--red-color)!important
 }
 
 .heading__layout {
@@ -2106,7 +2063,7 @@ Feature section
 }
 
 .icon-item .icon {
-    color: var(--purple-color)!important;
+    color: var(--red-color)!important;
     font-size: 60px;
 }
 
@@ -2114,7 +2071,7 @@ Feature section
 /*---Icon size change--*/
 
 .icon-item .icon:hover {
-    color: var(--light-purple-color)!important;
+    color: var(--light-red-color)!important;
     font-size: 70px;
 }
 
@@ -2188,7 +2145,7 @@ Pricing Area
     color: #fff;
     -webkit-clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(90% 0, 100% 6%, 100% 100%, 0 100%, 0 0);
-    background: var(--purple-color)!important;
+    background: var(--red-color)!important;
 }
 
 .pricing-plan--blue .pricing-plan__inner {
@@ -2275,8 +2232,8 @@ Pricing Area
     display: block;
     height: 10px;
     width: 6px;
-    border-left: 2px solid var(--purple-color)!important;
-    border-top: 2px solid var(--purple-color)!important;
+    border-left: 2px solid var(--red-color)!important;
+    border-top: 2px solid var(--red-color)!important;
     -webkit-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     transform: rotate(-135deg);
@@ -2299,7 +2256,7 @@ Pricing Area
 }
 
 .list--check .list__item.item--disabled {
-    opacity: .3
+    opacity: .7
 }
 
 .pricing-plan .list--check .list__item::after {
@@ -2338,7 +2295,7 @@ Pricing Area
 .button--filled {
     color: var(--white-color);
     font-size: 14px;
-    background: var(--purple-color)!important;
+    background: var(--red-color)!important;
     height: 70px;
     line-height: 70px;
     min-width: 210px;
@@ -2399,7 +2356,7 @@ Pricing Area
     line-height: 46px;
     min-width: 170px;
     text-align: left;
-    border: 2px solid var(--purple-color)!important;
+    border: 2px solid var(--red-color)!important;
     border-radius: 0 0 20px 0;
     padding: 0 20px
 }
@@ -2415,7 +2372,7 @@ Pricing Area
 
 .button--green:hover {
     color: #fff;
-    background: var(--purple-color)!important;
+    background: var(--red-color)!important;
 }
 
 
@@ -2532,12 +2489,12 @@ Service area
 }
 
 .p-color {
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
     color: white;
 }
 
 .service-btn button:hover {
-    background-color: var(--light-purple-color);
+    background-color: var(--light-red-color);
     color: #fff;
 }
 .services-img{
@@ -2558,7 +2515,7 @@ Service area
 }
 
 .centered .two:hover {
-    color: var(--purple-color) !important;
+    color: var(--red-color) !important;
 }
 
 .safe-text {
@@ -2572,7 +2529,6 @@ Service area
 }
 
 .b-filter {
-    /* filter: invert(15%) sepia(84%) saturate(2598%) hue-rotate(207deg) brightness(90%) contrast(101%); */
     filter: var(--filterone);
 }
 
@@ -3003,8 +2959,7 @@ figcaption ul li a i {
 .team-member figure:hover figcaption {
     visibility: visible;
     color: var(--white-color);
-    background: var(--purple-color);
-    /* Primary color, can be changed via colors.css */
+    background: var(--red-color);
     height: 100%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -3058,11 +3013,11 @@ Contact Area Used Transpotation Form
 =================================================*/
 
 .contact-links * {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .contact-links * :hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 .map-width {
@@ -3081,12 +3036,12 @@ Blog page css
 =================================================*/
 
 .blog-page-cover-txt-color {
-    color: var(--purple-color);
+    color: var(--red-color);
     text-decoration: underline;
 }
 #blogssec{
     padding-top: 100px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 .blogs_cover::before {
     background: #02448b80 none repeat scroll 0 0;
@@ -3117,7 +3072,7 @@ Blog page css
 }
 
 .blog_share_details a {
-    color: var(--purple-color);
+    color: var(--red-color);
     text-decoration: none;
     -webkit-transition: .3s;
     -o-transition: .3s;
@@ -3215,7 +3170,7 @@ h3 {
 
 .blog_share_details .comment_author {
     display: block;
-    color: var(--purple-color);
+    color: var(--red-color);
     font-weight: 600;
     margin-bottom: 20px;
 }
@@ -3230,7 +3185,7 @@ h3 {
 }
 
 .blog_share_details h3 a:hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 .blogs_button {
@@ -3252,7 +3207,7 @@ h3 {
 }
 
 .blogs_button .btn:hover {
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
 }
 .show-more a{
     margin-top: 30px;
@@ -3312,7 +3267,7 @@ h3 {
 
 [data-pagination] a:focus,
 [data-pagination] a:hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 [data-pagination] li.current a {
@@ -3341,7 +3296,7 @@ Blog detail page css
 
 .read_more_area {
     padding: 20px;
-    box-shadow: 2px 2px 5px 2px var(--purple-color);
+    box-shadow: 2px 2px 5px 2px var(--red-color);
 }
 
 .read_more_datecomment {
@@ -3349,7 +3304,7 @@ Blog detail page css
 }
 
 .read_more_text h3 {
-    color: var(--purple-color);
+    color: var(--red-color);
     font-weight: bold;
     border-top: 1px solid;
     padding-top: 2%;
@@ -3366,7 +3321,7 @@ Blog detail page css
 }
 
 .read_more_comment a:hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 .calender-comment {
@@ -3379,7 +3334,7 @@ Blog detail page css
     margin-left: 5%;
     padding: 2% 4%;
     border-left: solid;
-    border-color: var(--purple-color);
+    border-color: var(--red-color);
 }
 
 .blockquote p {
@@ -3391,7 +3346,7 @@ Blog detail page css
 }
 
 .icons_list:hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 .list_head {
@@ -3423,7 +3378,7 @@ Blog detail page css
     text-decoration: none;
     background-color: whitesmoke;
     padding: 2%;
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .social_icons {
@@ -3438,11 +3393,11 @@ Blog detail page css
 }
 
 .social_icons_list a {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .social_icons_list a:hover {
-    color: var(--light-purple-color);
+    color: var(--light-red-color);
 }
 
 .social_icons ul {
@@ -3453,7 +3408,7 @@ Blog detail page css
 }
 
 .comment_section h3 {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .total_comments a {
@@ -3475,7 +3430,7 @@ Blog detail page css
 }
 
 .reply_button a {
-    color: var(--purple-color);
+    color: var(--red-color);
     font-size: 80%;
 }
 
@@ -3489,16 +3444,16 @@ Blog detail page css
 }
 
 .high:focus {
-    box-shadow: 0 0 10px var(--purple-color);
+    box-shadow: 0 0 10px var(--red-color);
 }
 
 .high2:focus {
-    box-shadow: 0 0 10px var(--purple-color);
+    box-shadow: 0 0 10px var(--red-color);
 }
 
 .comment_form .btn {
     margin-top: 4%;
-    background-color: var(--purple-color);
+    background-color: var(--red-color);
     border: none;
     border-radius: 0%;
     padding: 1% 2%;
@@ -3508,13 +3463,18 @@ Blog detail page css
 }
 
 .comment_form .btn:hover {
-    background-color: var(--light-purple-color);
+    background-color: var(--light-red-color);
 }
 
 .comment_form h4 {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
-
+.trm{
+    border-left: 1px solid white;
+    line-height: 14px!important;
+    padding-left: 15px;
+    margin-left: 15px;
+}
 .search_box .search {
     padding: 5% 5%;
     border-radius: 0%;
@@ -3526,7 +3486,7 @@ Blog detail page css
 }
 
 .search_icon {
-    color: var(--purple-color);
+    color: var(--red-color);
     position: absolute;
     top: 36px;
     right: 30px;
@@ -3539,13 +3499,13 @@ Blog detail page css
 
 .categories span {
     float: right;
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .categories li a {
     text-decoration: none;
     font-weight: bold;
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .categories li {
@@ -3557,12 +3517,12 @@ Blog detail page css
 }
 
 .popular_posts_linkdate a {
-    color: var(--purple-color);
+    color: var(--red-color);
 }
 
 .popular_tags .tags a {
     text-decoration: none;
-    color: var(--purple-color);
+    color: var(--red-color);
     background-color: whitesmoke;
     padding: 8%;
 }
